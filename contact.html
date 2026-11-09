@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Cabinet de conseil en développement local et secteur privé, Ziguinchor</title>
+<meta name="description" content="Contactez notre cabinet de conseil à Ziguinchor pour votre projet de développement local ou d’appui au secteur privé.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="w"><a class="brand" href="index.html">Cabinet de conseil<small>en développement local et secteur privé</small></a><nav><a href="index.html">Accueil</a><a href="a-propos.html">À propos</a><a href="expertises.html">Nos expertises</a><a href="projets.html">Nos projets</a><a href="contact.html" class="on">Contact</a></nav><a class="btn" href="contact.html">Contactez-nous</a></div></header>
+<main>
+<div class="banner" style="--img:url(images/banniere.jpg)"><div class="w"><h1>Contactez-nous</h1><p>Décrivez-nous votre besoin : nous vous répondons rapidement.</p></div></div><section><div class="w two" style="align-items:start"><div class="info"><p class="ey">Nos coordonnées</p><h2>Parlons de votre projet</h2><p><b>Adresse</b>Ziguinchor – Sénégal</p><p><b>Téléphone</b><a href="tel:+221000000000">+221 XX XXX XX XX</a></p><p><b>E-mail</b><a href="mailto:contact@exemple.sn">contact@exemple.sn</a></p><p><a class="btn" href="https://www.google.com/maps/search/Ziguinchor+Sénégal" rel="noopener">Voir sur la carte</a></p></div>
+<form id="f"><label>Nom<input name="nom" required></label><label>Organisation<input name="org" placeholder="Commune, entreprise, association…"></label><label>Je suis<select name="type"><option>Une collectivité</option><option>Une entreprise</option><option>Une association ou ONG</option><option>Autre</option></select></label><label>Votre besoin<textarea name="msg" required></textarea></label><button class="btn" type="submit">Envoyer ma demande</button></form></div></section>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var d=new FormData(this);location.href='mailto:contact@exemple.sn?subject='+encodeURIComponent('Demande de contact – site web')+'&body='+encodeURIComponent('Nom : '+d.get('nom')+'\nOrganisation : '+d.get('org')+'\nProfil : '+d.get('type')+'\n\n'+d.get('msg'));});
+</script>
+</main>
+<footer><div class="w"><div class="g">
+<div><h4>Cabinet de conseil</h4><p>Cabinet de conseil en développement local et secteur privé, basé à Ziguinchor et intervenant dans tout le Sénégal.</p></div>
+<div><h4>Liens</h4><a href="index.html">Accueil</a><a href="a-propos.html">À propos</a><a href="expertises.html">Nos expertises</a><a href="projets.html">Nos projets</a><a href="contact.html">Contact</a></div>
+<div><h4>Contact</h4><p>Ziguinchor – Sénégal<br>+221 XX XXX XX XX<br>contact@exemple.sn</p></div>
+</div><div class="c">© 2026 Cabinet de conseil en développement local et secteur privé. Tous droits réservés.</div></div></footer>
+</body>
+</html>
